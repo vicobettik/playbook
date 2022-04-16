@@ -1,20 +1,13 @@
-// Ejemplo 6: Getters para acceder a los atributos del objeto
+// Ejemplo 6: Uso de map para convertir todos los nombres de una lista a mayúsculas
+const countries = ['Finland', 'Denmark', 'Sweden', 'Norway', 'Iceland']
 
-class Ajolonauta {
-    constructor(name, age, stack){
-     this.name = name
-     this.age = age
-     this.stack = stack
-     this.exercises_completed = 0
-     this.exercises_todo = 99
-    }
-  
-    // Podemos acceder a los atributos de esta clase
-    get getExercisesCompleted() {
-          return this.exercises_completed
-    }
-  }
-  
-  console.log("Ejemplo 6: Getters para acceder a los atributos del objeto")
-  const woopa = new Ajolonauta("Woopa", 1, [])
-  console.log(woopa.getExercisesCompleted)
+// const countriesFirstThreeLetters = countries6.map((country) =>
+//   country.toUpperCase().slice(0, 3) // el método slice obtiene solo la longitud marcada del string
+// )
+
+const countriesFirstThreeLetters = countries.map( country => {
+    return country.toUpperCase().slice(0,3);
+});
+
+console.log("Ejemplo 6: Uso de map para convertir todos los nombres de una lista a mayúsculas")
+console.log(countriesFirstThreeLetters)

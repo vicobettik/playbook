@@ -1,6 +1,7 @@
-// Ejemplo 2: Crear un objeto a partir de una clase
-class Pet {
-}
-const myPet = new Pet() // Puedo crear muchos objetos de la clase Pet
-console.log("Ejemplo 2: Crear un objeto a partir de una clase")
-console.log(myPet) // un objeto de la clase Pet
+// Ejemplo 2: for Each para calcular la suma de todos los elementos de una lista
+let sum = 0;
+const numbers = [1, 2, 3, 4, 5];
+
+numbers.forEach( num => sum += num );
+console.log("Ejemplo 2: Cálculo de la suma de los elementos de la lista");
+console.log(sum);

@@ -1,6 +1,6 @@
-// se define un arreglo de números
-const numbers = [1,2,3, 4, 5];
+console.log("Objetos")
 
-console.log("Ejemplo 1: Imprimiendo los elementos de un arreglo");
-
-numbers.forEach( num =>  console.log(num) )
+// Ejemplo 1: Crear un objeto
+const myObject = {} // Esto es un objeto vacío
+console.log("Ejemplo 1: Crear un objeto vacío")
+console.log(myObject)

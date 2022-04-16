@@ -1,25 +1,8 @@
-// Ejemplo  9: Herencia entre dos clases
-class Developer {
-    constructor(name, mainLang, stack){
-      this.name =  name
-      this.mainLang = mainLang
-      this.stack = stack
-    }
-  
-    get getName() {
-          return this.name
-      }
-  }
-  
-  console.log("Ejemplo  9: Herencia entre dos clases")
-  const victorDev = new Developer("Victor", "c#", ["angular", "js", "python"])
-  console.log(victorDev)
-  
-  // Se usa la palabra extends para indicar que heredarás las propiedades de la clase Padre (Developer) en la clase definida.
-  // Podemos definir una clase vacía y reusar todos los componentes de la clase padre
-  class LaunchXStudent extends Developer{
-  }
-  
-  const victorLaunchXDev = new LaunchXStudent("Victor", "c#", ["angular", "js", "python"])
-  console.log(victorLaunchXDev)
-  console.log(victorLaunchXDev.getName) // getter de la clase padre rehusada en la clase hija
+// Ejemplo 9: Uso del reduce
+
+const numbers = [1, 2, 3, 4, 5]
+
+const initialValue = 0;
+const result_of_reduce = numbers.reduce((acc, element) => acc + element, initialValue)
+console.log("Ejemplo 9: Uso de reduce para calcular la suma de los elementos de una lista")
+console.log(result_of_reduce)
