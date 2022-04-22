@@ -100,3 +100,19 @@ console.log('******************************')
 const totalExercisesFinished = explorers.reduce( (total, explorer) => total + explorer.exercises_completed, 0)
 
 console.log(totalExercisesFinished);
+
+console.log('******************************')
+
+const someExplorerExerciseFinished = explorers.some( (explorer) => {
+    explorer.missions.frontend.isFinished === true;
+})
+
+console.log(someExplorerExerciseFinished);
+
+console.log('******************************')
+
+const everyExplorerExerciseFinishedBoarding = explorers.every( (explorer) => {
+    explorer.missions.onboarding.isFinished === true;
+})
+
+console.log(everyExplorerExerciseFinishedBoarding);
